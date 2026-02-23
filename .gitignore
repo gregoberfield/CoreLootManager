@@ -1,5 +1,19 @@
 .release
 ExternalLibs
+
+# External libraries fetched by scripts/fetch_externals.ps1 (managed by .pkgmeta / BigWigs packager)
+ClassicLootManager/Libs/Ace3/
+ClassicLootManager/Libs/AceGUI-3.0-SharedMediaWidgets/
+ClassicLootManager/Libs/CallbackHandler-1.0/
+ClassicLootManager/Libs/LibCandyBar-3.0/
+ClassicLootManager/Libs/LibDBIcon-1.0/
+ClassicLootManager/Libs/LibDeflate/
+ClassicLootManager/Libs/LibLogger/
+ClassicLootManager/Libs/LibSerialize/
+ClassicLootManager/Libs/LibSharedMedia-3.0/
+ClassicLootManager/Libs/LibStub/
+ClassicLootManager/Libs/LibUIDropDownMenu/
+ClassicLootManager/Libs/lib-st/
 locales_*
 TESTING
 merger.py
@@ -7,3 +21,4 @@ report.log
 old_bidding_GUI.lua
 scripts/mdin*
 scripts/mdout*
+.specstory/

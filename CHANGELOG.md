@@ -1,3 +1,7 @@
+# Core Loot Manager v5.7.0
+## Changes
+### TBC Anniversary
+Added support for World of Warcraft The Burning Crusade Anniversary client version 2.5.5.
 # Core Loot Manager v5.6.0
 ## Notes
 ### Thank you for contributions!

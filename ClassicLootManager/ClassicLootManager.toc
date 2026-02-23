@@ -20,8 +20,7 @@
 ## OptionalDeps: LibStub, ElvUI, Gargul, RCLootCouncil_Classic, Ace3, ViragDevTool
 ## X-Donate: https://www.patreon.com/classiclootmanager
 ## X-License: Apache2
-## X-Curse-Project-ID: 481373
-## X-Wago-ID: vEGPw4K1
+## X-Curse-Project-ID: 1469716
 ## SavedVariables: CLM2_DB, CLM2_Logs, CLM2_MinimapIcon
 ## LoadOnDemand: 0
 

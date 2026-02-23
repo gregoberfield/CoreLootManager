@@ -32,7 +32,6 @@ jobs:
         uses: BigWigsMods/packager@master
         env:
           CF_API_KEY: ${{ secrets.CF_TOKEN }}
-          WAGO_API_TOKEN: ${{ secrets.WAGO_TOKEN }}
           # GITHUB_OAUTH: ${{ secrets.GITHUB_TOKEN }}
         with:
           args: "-o -u -m .pkgmeta"
@@ -43,17 +42,3 @@ jobs:
         env:
           GHR_PATH: ${{ env.artifact }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-  discord_announce:
-    needs:
-      - packager_release
-    name: Post a Discord Announcement
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: install disnake
-        run: pip3 install disnake
-      - name: announce
-        run: python3 scripts/post_release.py $WEBHOOK_URL
-        env:
-          WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}

@@ -1,6 +1,17 @@
 local  _, CLM = ...
 CLM.ChangelogData = {
     {
+        version = "v5.7.0",
+        data = {
+            {
+                name = "Changes",
+                data = {
+                    { header = "TBC Anniversary", body = "Added support for World of Warcraft The Burning Crusade Anniversary client version 2.5.5. Thanks to Tularemia of Dreamscythe." },
+                },
+            },
+        },
+    },
+    {
         version = "v5.6.0",
         data = {
             {

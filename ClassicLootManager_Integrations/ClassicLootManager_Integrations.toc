@@ -20,8 +20,7 @@
 ## OptionalDeps: LibStub
 ## X-Donate: https://www.patreon.com/classiclootmanager
 ## X-License: Apache2
-## X-Curse-Project-ID: 481373
-## X-Wago-ID: vEGPw4K1
+## X-Curse-Project-ID: 1469716
 ## DefaultState: enabled
 
 Libs\LibJsonLua\LibJsonLua.lua

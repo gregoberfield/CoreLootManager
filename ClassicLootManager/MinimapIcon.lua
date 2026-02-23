@@ -109,7 +109,14 @@ local function updateIcon()
     else -- Unknown state
         ic = "blue"
     end
-    CLM.MinimapDBI.icon = getIcon(ic)
+    -- Defer the LibDataBroker attribute update out of any protected call context.
+    -- Setting a LibDataBroker attribute fires CallbackHandler callbacks (callback()),
+    -- which is forbidden when triggered from a protected frame (e.g. the game menu).
+    C_Timer.After(0, function()
+        if CLM.MinimapDBI then
+            CLM.MinimapDBI.icon = getIcon(ic)
+        end
+    end)
 end
 
 function Minimap:Initialize()
